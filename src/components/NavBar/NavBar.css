@@ -1,0 +1,16 @@
+.NavBar {
+    display: flex;
+    background: transparent;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: rgb(255, 252, 63);
+  }
+
+.NavMenu {
+    display: inline-block;    
+    font-size: 14px;
+    width: auto;
+    text-decoration: none;
+    color: #333;   
+  }
