@@ -1,9 +1,22 @@
+import ItemCount from "../ItemCount/ItemCount"
 
-
-const itemlistconteiner = ({greeting}) => {
-    return (
-        <h1>{greeting}</h1>
+const Itemlistconteiner = () => {
+    const onAdd = (count) => {
+        if(count > 1){
+            console.log(`Se compraron ${count}`);
+        } else {
+            console.log(`Se compro ${count}`);
+        }
+    }
+    return(
+        <>
+            <div className="producto">
+                <div className="descrpcionProducto">
+                    <p>Tabla de Surf</p>        
+                </div>
+              <ItemCount stock={3} initial={1} onAdd={onAdd}/>
+            </div>
+        </>
     )
 }
-
-export default itemlistconteiner
+export default Itemlistconteiner;
