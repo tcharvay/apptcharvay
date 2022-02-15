@@ -1,9 +1,6 @@
 .producto {
-    margin: 100px auto;
-    width: 200px;
-    padding: 20px;
-    box-shadow: 0px 2px 2px 2px rgba(131, 131, 131, 0.333);
-    border-radius: 4px;  
+    display: flex;
+    justify-content: space-around;
 }
 
 .botonContador {
